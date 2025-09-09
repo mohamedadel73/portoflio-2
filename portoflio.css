@@ -380,3 +380,27 @@ footer {
   color: #00bcd4;
   text-decoration: underline;
 }
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #00bcd4, #007c91);
+  color: #fff;
+  border-radius: 50px; /* يخليها كابسولة */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #007c91, #00bcd4);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.6);
+  color: #fff;
+  text-decoration: none;
+}
