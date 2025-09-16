@@ -17,4 +17,28 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
+
+  document.querySelector(".next").addEventListener("click", () => {
+    changeSlide(currentSlide + 1);
+  });
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    changeSlide(currentSlide - 1);
+  });
+
+  function changeSlide(n) {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add("active");
+  }
+
+  // Auto play every 5 seconds
+  setInterval(() => {
+    changeSlide(currentSlide + 1);
+  }, 5000);
+
+
 
