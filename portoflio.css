@@ -172,6 +172,42 @@ h2 {
   
 
 }
+/* Testimonials Section */
+#testimonials {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#testimonials h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial-box p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-box h4 {
+  margin-top: 15px;
+  color: #00bcd4;
+}
+
 
 
   
