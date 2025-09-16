@@ -174,9 +174,10 @@ h2 {
 }
 /* Testimonials Section */
 #testimonials {
-  padding: 50px;
+  padding: 50px 20px;
   background-color: #f9f9f9;
   text-align: center;
+  position: relative;
 }
 
 #testimonials h2 {
@@ -185,27 +186,60 @@ h2 {
   color: #333;
 }
 
-.testimonials-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+.slider {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.testimonial-box {
+.slide {
+  display: none;
   background: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fade 1s ease-in-out;
 }
 
-.testimonial-box p {
+.slide.active {
+  display: block;
+}
+
+.slide p {
   font-style: italic;
   color: #555;
+  margin-bottom: 15px;
 }
 
-.testimonial-box h4 {
-  margin-top: 15px;
+.slide h4 {
   color: #00bcd4;
+}
+
+/* Controls */
+.slider-controls {
+  margin-top: 20px;
+}
+
+.slider-controls .prev,
+.slider-controls .next {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 15px;
+  color: #00bcd4;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.slider-controls .prev:hover,
+.slider-controls .next:hover {
+  color: #007b8f;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 
 
