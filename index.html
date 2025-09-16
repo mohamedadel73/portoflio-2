@@ -20,6 +20,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -207,6 +208,35 @@
     <span class="next">&#10095;</span>
   </div>
 </section>
+  <div class="slider-controls">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+</section>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
+
+  document.querySelector(".next").addEventListener("click", () => {
+    changeSlide(currentSlide + 1);
+  });
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    changeSlide(currentSlide - 1);
+  });
+
+  function changeSlide(n) {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add("active");
+  }
+
+  // Auto play every 5 seconds
+  setInterval(() => {
+    changeSlide(currentSlide + 1);
+  }, 5000);
+</script>
 
 
 
