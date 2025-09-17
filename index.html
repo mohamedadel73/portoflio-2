@@ -6,7 +6,8 @@
   <title>Mohamed Adel Portfolio</title>
   <link rel="stylesheet" href="portoflio.css">
   <!-- Font Awesome Icons -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#testimonials">Testimonials</a></li> <!-- ✅ الجديد -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -43,33 +44,42 @@
   <!-- About Section -->
   <section id="about">
     <h2><i class="fas fa-user"></i> About Me</h2>
-    <p>Hi, I’m <strong>Mohamed Adel</strong>, a Back-End Developer from Egypt with a passion for 
-    problem-solving and creativity.</p>
+<p>
+  Hi, I’m <strong>Mohamed Adel</strong>, a passionate <strong>Back-End Developer</strong> from Egypt with a strong focus on building 
+  scalable and efficient web applications. I thrive on solving complex problems and turning ideas into 
+  clean, reliable digital solutions.
+</p>
 
-    <p>I’m studying <strong>Computer Science at Mansoura University</strong> and specialize in building 
-    scalable backend systems using <strong>C#, ASP.NET, SQL Server</strong> alongside responsive 
-    frontends with <strong>HTML, CSS, and JavaScript</strong>. I combine strong programming skills with 
-    creative design expertise to deliver solutions that are both functional and visually appealing.</p>
+<p>
+  I’m currently pursuing a degree in <strong>Computer Science at Mansoura University</strong>, specializing in 
+  <strong>C#, ASP.NET, and SQL Server</strong>. Alongside my backend expertise, I craft responsive and user-friendly 
+  frontends with <strong>HTML, CSS, and JavaScript</strong>.
+</p>
 
-    <p>Selected from 700+ applicants for the <strong>Digital Egypt Pioneers Initiative – Full Stack .NET</strong>, 
-    I completed 6 months of intensive training in modern web development.</p>
+<p>
+  From over 700 applicants, I was selected for the prestigious 
+  <strong>Digital Egypt Pioneers Initiative – Full Stack .NET</strong>, where I completed 6 months of intensive 
+  training in modern web development practices.
+</p>
 
-    <p>I’ve contributed to impactful projects at Digital Egypt Pioneers Initiative and delivered 
-    10+ personal and freelance projects in programming and design. I’m detail-oriented, adaptable, 
-    and always eager to learn.</p>
+<p>
+  I’ve delivered <strong>10+ personal and freelance projects</strong> in both programming and design, and contributed 
+  to impactful projects within the Digital Egypt Pioneers Initiative. I’m detail-oriented, adaptable, 
+  and always eager to grow through new challenges.
+</p>
 
-    <p>If you’re looking for someone who can turn ideas into high-quality digital solutions, let’s connect!</p>
-    
+<p>
+  If you’re looking for a developer who combines technical expertise with creativity to deliver 
+  high-quality solutions — let’s connect!
+</p>
+
   </section>
 
   <!-- Education Section -->
   <section id="education">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2>
     <p><strong>Bachelor’s Degree in Computer Science (Expected graduation: 2027)</strong></p>
-    <p>Currently studying at Mansoura University, learning Java, C#, SQL, HTML, CSS, and JavaScript 
-    <p><strong>Digital Egypt Pioneers Initiative – Full Stack .NET</strong></p>
-    <p>Completed 6 months of intensive training in Full Stack .NET development, covering C#, ASP.NET, 
-    SQL Server, HTML, CSS, and JavaScript.</p>
+    <p>Currently studying at Mansoura University, learning Java, C#, SQL, HTML, CSS, and JavaScript for web development.</p>
   </section>
 
   <!-- Skills Section -->
@@ -79,7 +89,6 @@
       <li>Problem Solving with C++</li>
       <li>OOP (Object-Oriented Programming)</li>
       <li>Data Structure</li>
-      <li>Teamwork & Collaboration</li>
       <li>Version Control (Git/GitHub)</li>
       <li>JavaScript</li>
       <li>C#</li>
@@ -88,6 +97,7 @@
       <li>ASP.NET</li>
       <li>bootstrap</li>
       <li>SQL</li>
+      <li>Teamwork & Collaboration</li>
     </ul>
   </section>
 
@@ -146,30 +156,29 @@
   </section>
 
   <!-- Projects Section -->
-<section id="projects">
-  <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-  <h2>Projects</h2>
+<div class="portfolio-item">
+  <a href="https://github.com/mohamedadel73/library-management" target="_blank">
+    <img src="Library Management System.jpg" alt="Project 1" onclick="openImage(this)">
+    <h3>Library Management System</h3>
+  </a>
+  <p>A C# console application for managing books and users using arrays and structs.</p>
+</div>
 
-  <div class="portfolio-container">
-    <div class="portfolio-item">
-      <img src="Library Management System.jpg" alt="Project 1" onclick="openImage(this)">
-      <h3>Library Management System</h3>
-      <p>A C# console application for managing books and users using arrays and structs.</p>
-    </div>
+<div class="portfolio-item">
+  <a href="https://github.com/mohamedadel73/Notification-System" target="_blank">
+    <img src="Notification System.jpg" alt="Project 2" onclick="openImage(this)">
+    <h3>Notification System</h3>
+  </a>
+  <p>A C# program that sends and manages notifications for users, practicing OOP concepts and event handling.</p>
+</div>
 
-    <div class="portfolio-item">
-      <img src="Notification System.jpg" alt="Project 2" onclick="openImage(this)">
-      <h3>Notification System</h3>
-      <p>A C# program that sends and manages notifications for users, practicing OOP concepts and event handling.</p>
-    </div>
-
-    <div class="portfolio-item">
-      <img src="Shopping System.jpg" alt="Project 3" onclick="openImage(this)">
-      <h3>Shopping System</h3>
-      <p>I built a console-based shopping system in C# with OOP design for clean, modular code for managing shopping for users.</p>
-    </div>
-  </div>
-</section>
+<div class="portfolio-item">
+  <a href="https://github.com/mohamedadel73/Shopping-System" target="_blank">
+    <img src="Shopping System.jpg" alt="Project 3" onclick="openImage(this)">
+    <h3>Shopping System</h3>
+  </a>
+  <p>I built a console-based shopping system in C# with OOP design for clean, modular code for managing shopping for users.</p>
+</div>
 
 <!-- Popup for Images -->
 <div id="popup" class="popup">
@@ -208,67 +217,124 @@
     <span class="next">&#10095;</span>
   </div>
 </section>
-<script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll(".slide");
-  const totalSlides = slides.length;
-
-  document.querySelector(".next").addEventListener("click", () => {
-    changeSlide(currentSlide + 1);
-  });
-
-  document.querySelector(".prev").addEventListener("click", () => {
-    changeSlide(currentSlide - 1);
-  });
-
-  function changeSlide(n) {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (n + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add("active");
-  }
-
-  // Auto play every 5 seconds
-  setInterval(() => {
-    changeSlide(currentSlide + 1);
-  }, 5000);
-</script>
-
 
 
 
   <!-- Contact Section -->
- <section id="contact">
+<section id="contact">
   <h2><i class="fas fa-envelope"></i> Contact Me</h2>
   <p>Have a project in mind or need a reliable developer? Let’s bring your ideas to life!</p>
 
   <div class="contact-info">
-    <p><i class="fas fa-envelope"></i> 
+    <p><i class="fas fa-envelope" style="color:#d44638;"></i> 
       <strong>Email:</strong> 
       <a href="mailto:mmomoadel@gmail.com">mmomoadel@gmail.com</a>
     </p>
 
-    <p><i class="fas fa-phone"></i> 
+    <p><i class="fas fa-phone" style="color:#25d366;"></i> 
       <strong>Phone / WhatsApp:</strong> 
       <a href="https://wa.me/201225167636" target="_blank">+201225167636</a>
     </p>
 
-    <p><i class="fab fa-linkedin"></i> 
-      <strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/in/mohamed-adel08/" target="_blank">linkedin.com/in/mohamed-adel08</a>
+    <p><i class="fab fa-linkedin" style="color:#0e76a8;"></i> 
+      <strong></strong> 
+      <a href="https://www.linkedin.com/in/mohamed-adel08/" target="_blank">LinkedIn</a>
     </p>
 
-    <p><i class="fab fa-github"></i> 
-      <strong>GitHub:</strong> 
-      <a href="https://github.com/mohamedadel73" target="_blank">github.com/mohamedadel73</a>
+    <p><i class="fab fa-github" style="color:#333;"></i> 
+      <strong></strong> 
+      <a href="https://github.com/mohamedadel73" target="_blank">Github</a>
     </p>
+
+   <div class="freelance-profiles">
+  <p><i class="fas fa-briefcase" style="color:#ff9800;"></i> 
+    <a href="https://mostaql.com/u/Mohamed11548465" target="_blank">Mostaql</a>
+  </p>
+
+  <p><i class="fas fa-briefcase" style="color:#4caf50;"></i> 
+    <a href="https://khamsat.com/user/mohamedadel147" target="_blank">Khamsat</a>
+  </p>
+
+  <p><i class="fas fa-briefcase" style="color:#2196f3;"></i> 
+    <a href="https://www.freelancer.com/u/mmomoadel" target="_blank">Freelancer</a>
+  </p>
+
+  <p><i class="fas fa-briefcase" style="color:#00b894;"></i> 
+    <a href="https://www.upwork.com/freelancers/momoa2" target="_blank">Upwork</a>
+  </p>
+
+  <p><i class="fas fa-briefcase" style="color:#9c27b0;"></i> 
+    <a href="https://www.freelanceyard.com/en/freelancers/mohamed-adel-43" target="_blank">Freelanceyard</a>
+  </p>
+</div>
+
   </div>
 </section>
+
 
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mohamed Adel Portfolio. All rights reserved.</p>
   </footer>
+  <script >
+    
+// Testimonial Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+
+document.querySelector(".next").addEventListener("click", () => {
+  changeSlide(currentSlide + 1);
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  changeSlide(currentSlide - 1);
+});
+
+function changeSlide(n) {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (n + totalSlides) % totalSlides;
+  slides[currentSlide].classList.add("active");
+}
+
+// Auto play every 5 seconds
+setInterval(() => {
+  changeSlide(currentSlide + 1);
+}, 5000);
+
+// Smooth Scrolling Only
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+});
+
+
+// Image Popup Functionality
+function openImage(element) {
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+  popupImg.src = element.src;
+  popup.classList.add("show");
+}
+
+function closePopup() {
+  const popup = document.getElementById("popup");
+  popup.classList.remove("show");
+}
+
+  </script>
 
 </body>
 </html>
