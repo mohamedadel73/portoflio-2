@@ -147,16 +147,15 @@ h2 {
 }
 
 /* About & Skills */
-#about, #skills {
+#about{
   background: #7ad7e7;
   border-radius: 10px;
   padding: 30px;
   margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  font-size: 18px;
-  
+  font-size: 20px;
 }
-#skills,#about,#education:hover {
+#about,#education:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -242,17 +241,58 @@ h2 {
   to { opacity: 1; }
 }
 
+/* Skills Section */
+#skills {
+  background: #f0fafd;
+  border-radius: 12px;
+  padding: 40px 20px;
+  margin-top: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+#skills h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #007c91;
+  position: relative;
+  display: inline-block;
+}
+
+#skills h2 i {
+  margin-right: 10px;
+  color: #00bcd4;
+}
+
+/* Skills list style */
 .skills-list {
-  margin-top: 15px;
-  list-style: square outside;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 .skills-list li {
-  margin-bottom: 10px;
-  font-size: 18px;
+  background: linear-gradient(135deg, #00bcd4, #007c91);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
   font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+  cursor: default;
 }
+
+.skills-list li:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 188, 212, 0.5);
+  background: linear-gradient(135deg, #007c91, #00bcd4);
+}
+
 #experience ,#education {
   background: #7ad7e7;
   border-radius: 10px;
@@ -505,4 +545,118 @@ footer {
 
 
 /* تأثير لمعة خفيفة */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+  
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* الموبايل (شاشات صغيرة أقل من 768px) */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header h2 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  header p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service-box {
+    flex: 1 1 100%;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .download-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* التابلت (من 769px لحد 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  header h1 {
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 42px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+  }
+
+  .services-container {
+    gap: 15px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* شاشات كبيرة (ديسكتوب) */
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 56px;
+  }
+
+  header p {
+    font-size: 22px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
